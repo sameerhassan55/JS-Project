@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: blueviolet;
+     */
+    transition: 0.5s ease-in-out;
+
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: aliceblue;
+    width: 34%;
+    height: 34%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 40px;
+
+}
+
+#colorcode {
+    /* outline: auto;*/
+    /* color: rgb(228, 34, 192); */
+    font-size: larger;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+#btn {
+    background-color: blue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 2.5rem;
+
+
+
+}
+
+button:hover {
+    background-color: rgb(212, 180, 135) !important;
+    color: blue !important;
+    cursor: pointer;
+}
+
+#epic{
+    /* background-color: aliceblue; */
+    width: 34%;
+    text-align: center;
+    margin-top: 10px;
+}
+#epic input{
+    transform: scale(3);
+    margin-top: 25px;
+}
+
+#bar{
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: fit-content;
+        padding: 40px;
+    }
+
+    #colorcode {
+        font-size: 2.5rem;
+    }
+
+    #btn {
+        font-size: 1rem;
+
+        border-radius: 0;
+
+    }
+}
